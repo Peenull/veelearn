@@ -92,9 +92,9 @@ function MainScreenRenderer({ location }) {
               <div className="lessonInformalDescription">
                 <p>
                   {lesson.des.length > 118
-                    ? lesson.des.substring(0, 118) + "..."
+                    ? lesson.des.substring(0, 70) + "..."
                     : lesson.des}
-                  {lesson.des.length > 118 && (
+                  {lesson.des.length > 70 && (
                     <code
                       style={{
                         color: "gray",
