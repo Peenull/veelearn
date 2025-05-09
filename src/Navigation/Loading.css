@@ -1,0 +1,94 @@
+.skeletonScreen {
+  height: 200px;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: 2px solid #b8b8b8;
+  margin: 5px 2px;
+  padding: 5px;
+  border-radius: 12px;
+  width: 95vw;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.skeletonImage {
+  width: 180px;
+  cursor: pointer;
+  height: 200px;
+  scroll-snap-align: start;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+}
+.skeletonDescription {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.skeletonSubject {
+  height: 20px;
+  display: block;
+  width: 40%;
+  background-color: #c5c5c5dc;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.skeletonText {
+  height: 15px;
+  width: 65%;
+  display: block;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  margin: 3px 0;
+}
+.skeletonText:nth-child(3) {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.skeletonText:nth-child(4) {
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: #cfcfcf;
+}
+.skeletonText:nth-child(5) {
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: #cfcfcf;
+}
+.skeletonTextDiv {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.skeletonTextDiv .skeletonTextDescription:last-child {
+  width: 45%;
+}
+.skeletonTextDescription {
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #dadada;
+  border-radius: 5px;
+}
+.loading {
+  animation: loading 3s infinite ease-in-out;
+}
+@keyframes loading {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,112 @@
+.beekButton:hover {
+  opacity: 0.7;
+}
+.beekButton:active {
+  opacity: 0.5;
+}
+.topic {
+  height: 200px;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-bottom: 2px solid #b8b8b8;
+  margin: 5px 2px;
+  padding: 5px;
+  border-radius: 12px;
+  width: 95vw;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.topicImageContainer {
+  height: 100%;
+  gap: 3px;
+  width: 180px;
+  overflow-x: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.topicImage {
+  width: 180px;
+  cursor: pointer;
+  height: 200px;
+  scroll-snap-align: start;
+}
+.topicImage:hover {
+  transform: scale(1.01);
+}
+.subjectTitle {
+  color: #00796b;
+  font-weight: bold;
+  /* font-size: 1rem; */
+}
+.topicTitle {
+  color: #333;
+  font-size: 15px;
+  height: 40px;
+  overflow: scroll;
+  background-color: #ffffff34;
+}
+.lessonFormalDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-between;
+  height: 100%;
+}
+.lessonEnteringContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 5px;
+  width: 100px;
+}
+.lessonFormalDescriptionTitles {
+  flex: 1;
+}
+.enteringButton {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ff00ea1e;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+}
+.enteringButton:hover {
+  box-shadow: 0 0 3px;
+}
+.lessonVisitButton {
+  color: #19d400;
+}
+.lessonViewButton {
+  color: #00b6ce;
+}
+.lessonDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 50%;
+  flex: 1;
+  gap: 5px;
+}
+.lessonInformalDescription {
+  height: 100%;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+}
+.lessonType {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid;
+}
+.lessonSource {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid;
+}

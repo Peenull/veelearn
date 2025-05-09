@@ -1,0 +1,197 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  border-bottom: 2px solid #999999;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  background-color: #f1f1f1;
+  z-index: 5;
+}
+.topName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.name {
+  color: #3c67df;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  float: right;
+}
+.searchInput {
+  background-color: transparent;
+  border: 1px solid #858585;
+  border-radius: 15px;
+  width: 200px;
+  max-width: 300px;
+  font-size: 18px;
+  padding: 0 5px;
+  outline: none;
+  color: #202020;
+}
+.searchIcon {
+  color: #0075857e;
+  font-size: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.menu:active {
+  opacity: 0.5;
+}
+.menuBars {
+  background-color: black;
+  display: block;
+  width: 25px;
+  height: 3px;
+}
+.largeScreen {
+  display: none;
+}
+.side {
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  width: 35%;
+  height: 91vh;
+  background-color: #e6e6e6;
+  padding: 10px;
+  z-index: 2;
+}
+.homeSideBar {
+  border-bottom: 4px solid;
+  color: #3061e7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.course {
+  display: flex;
+  flex-direction: column;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 2px solid;
+  color: #3c68df;
+  cursor: pointer;
+}
+.options:hover {
+  opacity: 0.7;
+}
+.options:active {
+  opacity: 0.5;
+}
+.subject {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  color: #3c67df;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.subject a {
+  font-size: 17px;
+  margin: 1px 0;
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+.subject a:hover {
+  opacity: 0.7;
+}
+.subject a:active {
+  opacity: 0.5;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.contact a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.contact a:active {
+  opacity: 0.5;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+.feedback label {
+  font-size: 20px;
+  color: #3c68df;
+}
+.feedback textarea {
+  width: 95%;
+  height: 80px;
+  font-size: 20px;
+  resize: none;
+  border-radius: 5px;
+  border: 2px solid gray;
+  outline: none;
+  background-color: #3c68df42;
+}
+.feedback .beekButton {
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #0004ffbb;
+  background-color: #3c68df81;
+  border: 1px solid;
+}
+
+.donateButton {
+  width: 95%;
+  margin: 5px 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #75fae4;
+  background-color: #00cc55;
+  border-radius: 5px;
+  border: none;
+}
+.beekButton {
+  cursor: pointer;
+}
+.beekButton:hover {
+  opacity: 0.7;
+}
+.beekButton:active {
+  opacity: 0.5;
+}
+
+.legality {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.legality div {
+  display: flex;
+  flex-direction: column;
+}
+.legality .legalStuff {
+  font-size: 14px;
+  cursor: pointer;
+}

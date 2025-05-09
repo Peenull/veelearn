@@ -1,0 +1,98 @@
+.miniRender {
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+}
+.moreDiv {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid white; */
+  margin: 5px 0;
+  width: 100%;
+  align-self: center;
+  /* background-color: #00000010; */
+}
+.moreDirector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(139, 127, 127, 0.11);
+  justify-content: flex-end;
+}
+.moreDiv h3 {
+  color: #00a7bd;
+}
+
+.rendering {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniRendererTopic {
+  height: fit-content;
+  width: 47%;
+  margin: 2px;
+  background-color: #fdfdfd;
+  padding: 0 2px;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #b8b8b8;
+}
+
+.miniRendererImage {
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+.miniRendererImageContainer {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  background-color: blue;
+  scroll-snap-type: x mandatory;
+}
+.miniRendererLessonDescription {
+  width: 100%;
+}
+.miniRendererFormalDescription {
+  display: flex;
+  flex-direction: column;
+}
+.miniRendererLessonEnteringContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 3px;
+}
+
+.miniRendererEnteringButton {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ff00ea1e;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+}
+.miniRendererEnteringButton:hover {
+  box-shadow: 0 0 3px;
+}
+.miniRendererLessonVisitButton {
+  color: #19d400;
+}
+.miniRendererLessonViewButton {
+  color: #00b6ce;
+}
+.miniTopicTitle {
+  color: #333;
+  font-size: 15px;
+  height: 40px;
+  padding: 2px 0;
+  overflow: scroll;
+  background-color: #ffffff34;
+}
