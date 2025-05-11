@@ -4,7 +4,7 @@ import "./HomeScreen.css";
 import * as FA from "react-icons/fa";
 
 function MiniRenderer({ subject }) {
-  let { changeLocation } = useContext(State);
+  let { changeLocation, handleView } = useContext(State);
 
   const key = () =>
     ((Math.random() * Math.random()) / Math.random()) * Math.random();
@@ -56,13 +56,13 @@ function MiniRenderer({ subject }) {
                       className="lessonSource"
                       style={{
                         color:
-                          lesson.source === "Youtube"
+                          lesson.src === "Youtube"
                             ? "#f90011"
-                            : lesson.source === "Wikipedia" && "#50f",
+                            : lesson.src === "Wikipedia" && "#50f",
                       }}
                     >
                       <FA.FaDirections color="#0aa000" />{" "}
-                      {lesson.source ? lesson.source : "Unknown"}
+                      {lesson.src ? lesson.src : "Unknown"}
                     </p>
                   </div>
                   <div className="miniRendererLessonEnteringContainer">
@@ -75,7 +75,10 @@ function MiniRenderer({ subject }) {
                         Visit
                       </button>
                     </a>
-                    <button className="miniRendererLessonViewButton miniRendererEnteringButton beekButton">
+                    <button
+                      onClick={() => handleView(lesson)}
+                      className="miniRendererLessonViewButton miniRendererEnteringButton beekButton"
+                    >
                       View
                     </button>
                   </div>

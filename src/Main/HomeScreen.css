@@ -1,6 +1,8 @@
 .miniRender {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 1px;
 }
 .moreDiv {
@@ -29,6 +31,7 @@
 .rendering {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .miniRendererTopic {
@@ -44,15 +47,15 @@
 
 .miniRendererImage {
   width: 100%;
-  object-fit: cover;
   scroll-snap-align: start;
+  height: 200px;
 }
 .miniRendererImageContainer {
   width: 100%;
   overflow-x: scroll;
   scroll-behavior: smooth;
   display: flex;
-  background-color: blue;
+  background-color: #86868881;
   scroll-snap-type: x mandatory;
 }
 .miniRendererLessonDescription {

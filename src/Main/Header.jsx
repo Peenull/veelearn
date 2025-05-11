@@ -2,15 +2,17 @@ import React, { useContext } from "react";
 import "./Frame.css";
 import * as FA from "react-icons/fa";
 import { State } from "../Navigation/Navigator";
+
 function Header(props) {
-  const { side, setSide, search, setSearch } = useContext(State);
+  const { side, setSide, search, setSearch, changeLocation } =
+    useContext(State);
 
   return (
     <div className="header">
-      <div className="topName">
-        <FA.FaBook color="#33f" size={17} />
-        <h2 className="name">Beek</h2>
+      <div className="topName" onClick={() => changeLocation("home")}>
+        <h2 className="name">VLearn</h2>
       </div>
+
       <div className="searchBar">
         <input
           value={search}

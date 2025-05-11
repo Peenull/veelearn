@@ -8,7 +8,7 @@ function MainScreenRenderer({ location }) {
   let [data, setData] = useState([]);
   let [loaded, setLoaded] = useState(false);
 
-  let { search } = useContext(State);
+  let { search, handleView } = useContext(State);
 
   useEffect(() => {
     setLoaded(false);
@@ -31,7 +31,7 @@ function MainScreenRenderer({ location }) {
   const key = () =>
     ((Math.random() * Math.random()) / Math.random()) * Math.random();
   return (
-    <div>
+    <div className="mainScreenRenderer">
       {loaded ? (
         renderer.map((lesson) => (
           <div key={key()} className="topic">
@@ -64,13 +64,13 @@ function MainScreenRenderer({ location }) {
                       className="lessonSource"
                       style={{
                         color:
-                          lesson.source === "Youtube"
+                          lesson.src === "Youtube"
                             ? "#f90011"
-                            : lesson.source === "Wikipedia" && "#50f",
+                            : lesson.src === "Wikipedia" && "#50f",
                       }}
                     >
                       <FA.FaDirections color="#0aa000" />{" "}
-                      {lesson.source ? lesson.source : "Unknown"}
+                      {lesson.src ? lesson.src : "Unknown"}
                     </p>
                   </div>
                 </div>
@@ -84,7 +84,10 @@ function MainScreenRenderer({ location }) {
                       Visit
                     </button>
                   </a>
-                  <button className="lessonViewButton enteringButton beekButton">
+                  <button
+                    onClick={() => handleView(lesson)}
+                    className="lessonViewButton enteringButton beekButton"
+                  >
                     View
                   </button>
                 </div>

@@ -1,3 +1,10 @@
+.mainScreenRenderer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
 .beekButton:hover {
   opacity: 0.7;
 }
@@ -16,6 +23,9 @@
   border-radius: 12px;
   width: 95vw;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  animation: appear 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 .topicImageContainer {
   height: 100%;
@@ -109,4 +119,16 @@
   align-items: center;
   gap: 5px;
   border-bottom: 1px solid;
+}
+@keyframes appear {
+  from {
+    opacity: 0.5;
+    /* transform: translateX(-100%); */
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(0); */
+    scale: 1;
+  }
 }
